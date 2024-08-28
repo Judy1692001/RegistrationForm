@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <link rel="stylesheet" href="style.css">
+
+    <title> Registration Form </title>
+
+</head>
+
+<body>
+
+    <h1> Your response has been recorded. </h1>
+    
+    <form action="/submit-form" method="post">
+
+        <h3> <span> Register Now </span> to start learning</h3>
+        
+        <h5> Personal Information </h5>
+        
+        <label for="firstname"> First Name </label>
+        
+        <input type="text" id="firstname" name="firstname" placeholder="e.g. John" required>
+
+        <div class="error-message msg-1"> Length must be less than 10 chars </div>
+
+        <label for="lastname"> Last Name </label>
+        
+        <input type="text" id="lastname" name="lastname" placeholder="e.g. Doe" required>
+
+        <div class="error-message msg-1"> Length must be less than 10 chars </div>
+
+        <label for="password"> Password </label>
+
+        <input type="password" name="password" id="password" placeholder="Create a strong password" required>
+
+        <div class="error-message" id="msg-2"> Length must be less than 8 chars with uppercase char, lower case chars, symbols, numbers </div>
+
+        <label for="confirmpassword"> Confirm Password </label>
+        
+        <input type="password" name="confirmpassword" id="confirmpassword" placeholder="Re-enter your password" required>
+
+        <div class="error-message" id="msg-3"> Please ensure both passwords are identical </div>
+
+        <h5> Contact Information </h5>
+
+        <label for="email"> Email </label>
+
+        <input type="email" name="email" id="email" placeholder="example@domain.com" required>
+
+        <div class="error-message" id="msg-4"> Please enter a valid email address </div>
+
+        <label for="phonenumber"> Phone Number </label>
+
+        <input type="tel" name="phonenumber" id="phonenumber" placeholder="(+20) XXX XXX XXXX" required>
+
+        <div class="error-message" id="msg-5"> Invalid phone number format. Use (+20) XXX XXX XXXX </div>
+
+        <label for="cv"> CV / Cover Letter </label>
+
+        <input type="file" name="cv" id="cv" required>
+
+        <div class="error-message" id="msg-6"> Please upload a JPG or PNG image file </div>
+
+        <input type="submit" value="Submit" id="submit-btn" disabled>
+
+    </form>
+
+    <script src="index.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,161 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 100%;
+}
+
+body {
+    background-color: cornsilk;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+h1 {
+    font-size: 2rem;
+    color: #7a5d39;
+    display: none;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    height: 80vh;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 40px;
+    background-color: rgb(255, 252, 247);
+    overflow-y: auto;
+}
+
+form::-webkit-scrollbar {
+    width: 0;
+    background: transparent;
+}
+
+form * {
+    width: 100%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h3 {
+    text-align: center;
+    font-weight: 500;
+    color: burlywood;
+    margin-bottom: 35px;
+}
+
+span {
+    font-weight: bold;
+    color: rgb(212, 138, 42);
+}
+
+h5 {
+    margin-top: 30px;
+    margin-bottom: 40px;
+    color: #806440;
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+
+label {
+    color: #7a5d39;
+    margin-bottom: 15px;
+    font-size: 0.8rem;
+    font-weight: 500;
+}
+
+input {
+    margin-bottom: 37px;
+    border-radius: 5px;
+    outline: none;
+    border: 1px solid #9b7547;
+    padding: 5px;
+    color: #765f41;
+    cursor: text;
+}
+
+input[type="file"] {
+    border: none;
+}
+
+input::placeholder {
+    color: #9b8b78;
+}
+
+input[type="submit"] {
+    background-color: burlywood;
+    border: none;
+    align-self: center;
+    margin-top: 30px;
+    padding: 10px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+    font-size: 0.9rem;
+    border-radius: 20px;
+    color: rgb(135, 105, 66);
+    margin-bottom: 0;
+    cursor: pointer;
+}
+
+.error-message {
+    color: red;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: none;
+}
+
+@media only screen and (min-width: 600px) {
+
+    form {
+        width: 60%;
+        padding: 10%;
+    }
+
+    h3 {
+        font-size: 0.8rem;
+    }
+    
+    span {
+        font-size: 1.3rem;
+    }
+
+    input[type='submit'] {
+        width: 100px;
+    }
+
+    .error-message {
+        font-size: 0.6rem;
+    }
+
+}
+
+@media only screen and (min-width: 768px) {
+
+    form {
+        width: 50%;
+        padding: 6%;
+    }
+
+    .error-message {
+        font-size: 0.6rem;
+    }
+
+}
+
+@media only screen and (min-width: 992px) {
+
+    form {
+        width: 40%;
+        padding: 5%;
+    }
+
+    .error-message {
+        font-size: 0.7rem;
+    }
+
+}
